@@ -68,3 +68,35 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<!-- semantic-ui libraries for CSS: -->
+
+terminal: npm install semantic-ui
+URL : https://cdnjs.com/libraries/semantic-ui
+Link : <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.5.0/semantic.min.css" integrity="sha512-KXol4x3sVoO+8ZsWPFI/r5KBVB/ssCGB5tsv2nVOKwLg33wTFP3fmnXa47FdSVIshVTgsYk/1734xSk9aFIa4A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Component -->
+
+a piece of reuseable code
+
+<!-- to install unique key packages -->
+
+npm i uuidv4
+
+ERROR in ./node_modules/uuidv4/build/lib/uuidv4.js 7:15-30
+Module not found: Error: Can't resolve 'util' in 'C:\Cuvette\Learn React\contact-app\node_modules\uuidv4\build\lib'
+
+BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
+This is no longer the case. Verify if you need this module and configure a polyfill for it.
+
+If you want to include a polyfill, you need to: - add a fallback 'resolve.fallback: { "util": require.resolve("util/") }' - install 'util'
+If you don't want to include a polyfill, you can use an empty module like this:
+resolve.fallback: { "util": false }
+
+<!-- to recover the error occured while install uuidv4 -->
+
+nmp install util
+
+<!-- react router dom- which is saved in package.json file -->
+
+npm install react-router-dom --save
